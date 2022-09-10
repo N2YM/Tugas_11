@@ -49,7 +49,7 @@ class HomeController extends Controller
         // $sum = $list_produk->sum('stok');
         // dd($sum);
 
-        $data['list'] = Produk::simplepaginate(3);
+        $data['list'] = Produk::simplepaginate(10);
         return view('test-collection', $data);
 
         dd($list_bike, $list_produk);
